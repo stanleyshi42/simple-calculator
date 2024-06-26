@@ -1,9 +1,20 @@
 <div class="container">
   <div class="row">
-    <input readonly [(ngModel)]="expression" placeholder="0" />
+    <input
+      class="mt-4 lead"
+      readonly
+      [(ngModel)]="expression"
+      placeholder="0"
+    />
   </div>
   <div class="row">
-    <label>={{ result }}</label>
+    <div *ngIf="result.length > 0; else noresult">
+      <label class="mb-2 lead">= {{ result }}</label>
+    </div>
+
+    <ng-template #noresult>
+      <label class="mb-2 lead">= 0</label>
+    </ng-template>
   </div>
 
   <!-- Row 1 -->
@@ -164,7 +175,11 @@
   </div>
   <!-- Row 5 -->
   <div class="row">
-    <button class="btn btn-primary" (click)="evalExpression()">
+    <button
+      class="btn btn-primary m-2"
+      style="height: 100px; font-size: 30px"
+      (click)="evalExpression()"
+    >
       Calculate
     </button>
   </div>
