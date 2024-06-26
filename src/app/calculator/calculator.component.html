@@ -4,7 +4,6 @@
       class="mt-4 lead fs-1"
       readonly
       [(ngModel)]="expression"
-      placeholder="0"
     />
   </div>
   <div class="row">
@@ -21,7 +20,7 @@
   <div class="row g-0 justify-content-center">
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('7')"
       >
@@ -30,7 +29,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('8')"
       >
@@ -39,7 +38,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('9')"
       >
@@ -48,7 +47,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('/')"
       >
@@ -60,7 +59,7 @@
   <div class="row g-0 justify-content-center">
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('4')"
       >
@@ -69,7 +68,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('5')"
       >
@@ -78,7 +77,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('6')"
       >
@@ -87,7 +86,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('*')"
       >
@@ -99,7 +98,7 @@
   <div class="row g-0 justify-content-center">
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('1')"
       >
@@ -108,7 +107,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('2')"
       >
@@ -117,7 +116,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('3')"
       >
@@ -126,7 +125,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('-')"
       >
@@ -138,7 +137,7 @@
   <div class="row g-0 justify-content-center">
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('0')"
       >
@@ -147,7 +146,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('.')"
       >
@@ -156,7 +155,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="subtractFromExpression()"
       >
@@ -165,7 +164,7 @@
     </div>
     <div class="col-sm-auto">
       <button
-        class="btn btn-secondary m-2 fs-1"
+        class="btn btn-secondary m-1 fs-1"
         style="width: 100px; height: 100px"
         (click)="addToExpression('+')"
       >
@@ -177,11 +176,23 @@
   <div class="row g-0 justify-content-center">
     <div class="col-sm-auto">
       <button
-        class="btn btn-primary m-2 fs-1"
-        style="width: 448px; height: 100px"
+        class="btn btn-primary m-1 fs-1"
+        style="width: 424px; height: 100px"
         (click)="evalExpression()"
       >
         Calculate
+      </button>
+    </div>
+  </div>
+  <!-- Row 6 -->
+  <div class="row g-0 justify-content-center">
+    <div class="col-sm-auto">
+      <button
+        class="btn btn-danger m-1 fs-1"
+        style="width: 424px; height: 100px"
+        (click)="clearExpression()"
+      >
+        Clear
       </button>
     </div>
   </div>

@@ -17,6 +17,10 @@ export class CalculatorComponent {
     this.expression = this.expression.slice(0, -1);
   }
 
+  clearExpression() {
+    this.expression = '';
+  }
+
   evalExpression() {
     try {
       this.result = eval(this.expression).toString();
