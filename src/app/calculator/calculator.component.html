@@ -8,49 +8,100 @@
 
   <!-- Row 1 -->
   <div class="row">
-    <div class="col">
-      <button class="btn btn-secondary" (click)="addToExpression('7')">
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary p-4 rounded-0" (click)="addToExpression('7')">
         7
       </button>
     </div>
-    <div class="col">
-      <button class="btn btn-secondary" (click)="addToExpression('8')">
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary p-4 rounded-0" (click)="addToExpression('8')">
         8
       </button>
     </div>
-    <div class="col">
-      <button class="btn btn-secondary" (click)="addToExpression('9')">
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary p-4 rounded-0" (click)="addToExpression('9')">
         9
       </button>
     </div>
-    <div class="col">
-      <button class="btn btn-secondary" (click)="addToExpression('/')">
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary p-4 rounded-0" (click)="addToExpression('/')">
         /
       </button>
     </div>
   </div>
   <!-- Row 2 -->
   <div class="row">
-    <div class="col"><button class="btn btn-secondary">4</button></div>
-    <div class="col"><button class="btn btn-secondary">5</button></div>
-    <div class="col"><button class="btn btn-secondary">6</button></div>
-    <div class="col"><button class="btn btn-secondary">*</button></div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('4')">
+        4
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('5')">
+        5
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('6')">
+        6
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('*')">
+        *
+      </button>
+    </div>
   </div>
   <!-- Row 3 -->
   <div class="row">
-    <div class="col"><button class="btn btn-secondary">1</button></div>
-    <div class="col"><button class="btn btn-secondary">2</button></div>
-    <div class="col"><button class="btn btn-secondary">3</button></div>
-    <div class="col"><button class="btn btn-secondary">-</button></div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('1')">
+        1
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('2')">
+        2
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('3')">
+        3
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('-')">
+        -
+      </button>
+    </div>
   </div>
   <!-- Row 4 -->
   <div class="row">
-    <div class="col"><button class="btn btn-secondary">0</button></div>
-    <div class="col"><button class="btn btn-secondary">.</button></div>
-    <div class="col"><button class="btn btn-secondary">←</button></div>
-    <div class="col"><button class="btn btn-secondary">+</button></div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('0')">
+        0
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('.')">
+        .
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="subtractFromExpression()">
+        ←
+      </button>
+    </div>
+    <div class="col-3 text-center">
+      <button class="btn btn-secondary" (click)="addToExpression('+')">
+        +
+      </button>
+    </div>
   </div>
+  <!-- Row 5 -->
   <div class="row">
-    <button class="btn btn-primary" (click)="evalExpression()">Calculate</button>
+    <button class="btn btn-primary" (click)="evalExpression()">
+      Calculate
+    </button>
   </div>
 </div>

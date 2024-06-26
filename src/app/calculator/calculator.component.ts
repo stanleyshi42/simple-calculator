@@ -13,6 +13,10 @@ export class CalculatorComponent {
     this.expression = this.expression + e;
   }
 
+  subtractFromExpression() {
+    this.expression = this.expression.slice(0, -1);
+  }
+
   evalExpression() {
     try {
       this.result = eval(this.expression).toString();
